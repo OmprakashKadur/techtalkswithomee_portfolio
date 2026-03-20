@@ -1,0 +1,102 @@
+{
+  "categories": [
+    { "id": "all", "label": "All Projects" },
+    { "id": "beauty", "label": "Beauty & Salon" },
+    { "id": "education", "label": "Education" },
+    { "id": "interior", "label": "Interior Design" },
+    { "id": "ecommerce", "label": "E-commerce" },
+    { "id": "construction", "label": "Construction" },
+    { "id": "restaurant", "label": "Food & Restaurant" },
+    { "id": "healthcare", "label": "Healthcare" }
+  ],
+  "projects": [
+    {
+      "id": "glam-studio-salon",
+      "title": "Glam Studio Salon",
+      "category": "beauty",
+      "description": "A premium unisex salon website with elegant pink theme, online booking integration, and WhatsApp-powered client engagement. Increased monthly bookings by 40%.",
+      "thumbnail": "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=800&auto=format&fit=crop",
+      "link": "/work/glam-studio-salon",
+      "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "WhatsApp API"],
+      "results": "40% more bookings",
+      "featured": true
+    },
+    {
+      "id": "eduquest-academy",
+      "title": "EduQuest Academy",
+      "category": "education",
+      "description": "Interactive online learning platform with course showcase, mentor profiles, and enrollment system. Serves 50,000+ active students with a clean, modern interface.",
+      "thumbnail": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop",
+      "link": "/work/eduquest-academy",
+      "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      "results": "50K+ active users",
+      "featured": true
+    },
+    {
+      "id": "urban-space-interiors",
+      "title": "Urban Space Interiors",
+      "category": "interior",
+      "description": "Luxury interior design portfolio with immersive project galleries, 3D design process visualization, and consultation booking. Dark premium aesthetic with gold accents.",
+      "thumbnail": "https://images.unsplash.com/photo-1618221195710-dd6b41faeaa6?q=80&w=800&auto=format&fit=crop",
+      "link": "/work/urban-space-interiors",
+      "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      "results": "3x more leads",
+      "featured": true
+    },
+    {
+      "id": "pink-bliss-salon",
+      "title": "Pink Bliss Beauty Studio",
+      "category": "beauty",
+      "description": "Luxury women's salon with sophisticated purple theme. Features organic products showcase, animated service cards, and premium booking experience.",
+      "thumbnail": "https://images.unsplash.com/photo-1522338242992-e1a54f0e2e70?q=80&w=800&auto=format&fit=crop",
+      "link": "/work/pink-bliss-salon",
+      "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      "results": "2x client retention",
+      "featured": false
+    },
+    {
+      "id": "buildright-construction",
+      "title": "BuildRight Construction",
+      "category": "construction",
+      "description": "Professional construction company website with project portfolio, real-time stats showcase, and quote request functionality. Robust industrial amber theme.",
+      "thumbnail": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
+      "link": "/work/buildright-construction",
+      "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "Google Maps"],
+      "results": "60% faster quotes",
+      "featured": false
+    },
+    {
+      "id": "nova-fashion-store",
+      "title": "Nova Fashion Store",
+      "category": "ecommerce",
+      "description": "Elegant fashion e-commerce store with split layout design, gold accents, and WhatsApp ordering integration. Premium luxury shopping experience with catalog management.",
+      "thumbnail": "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=800&auto=format&fit=crop",
+      "link": "/work/nova-fashion-store",
+      "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "WhatsApp Commerce"],
+      "results": "₹2L+ monthly sales",
+      "featured": false
+    },
+    {
+      "id": "spice-route-restaurant",
+      "title": "Spice Route Restaurant",
+      "category": "restaurant",
+      "description": "Multi-cuisine restaurant website with an interactive digital menu, table reservations, and online ordering powered by WhatsApp. Warm, inviting design with food photography.",
+      "thumbnail": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop",
+      "link": "/work/spice-route-restaurant",
+      "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "Swiggy API"],
+      "results": "Online orders +55%",
+      "featured": false
+    },
+    {
+      "id": "healwell-clinic",
+      "title": "HealWell Multi-Specialty Clinic",
+      "category": "healthcare",
+      "description": "Modern healthcare website with doctor profiles, online appointment booking, and patient portal. Clean, trustworthy UI with accessibility-first design.",
+      "thumbnail": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=800&auto=format&fit=crop",
+      "link": "/work/healwell-clinic",
+      "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "Calendar API"],
+      "results": "80% fewer no-shows",
+      "featured": false
+    }
+  ]
+}
