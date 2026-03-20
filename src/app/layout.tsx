@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import CustomCursor from "@/components/shared/CustomCursor";
+import { Analytics } from "@vercel/analytics/next";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -29,7 +30,8 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Omprakash Kadur | Websites That Convert — Lead Generation for Local India",
+  title:
+    "Omprakash Kadur | Websites That Convert — Lead Generation for Local India",
   description:
     "I build high-performance, multi-tenant websites for salons, clinics, and businesses in Tier 2 & 3 cities. WhatsApp lead capture, Google Business, and measurable ROI. techtalkswithomee.com",
   keywords: [
@@ -60,12 +62,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${syne.variable} ${dmSans.variable} ${dmMono.variable}`}>
+    <html
+      lang="en"
+      className={`${syne.variable} ${dmSans.variable} ${dmMono.variable}`}
+    >
       <body>
         <CustomCursor />
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

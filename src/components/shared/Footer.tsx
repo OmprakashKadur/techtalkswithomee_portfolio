@@ -12,12 +12,12 @@ const footerLinks = [
 const socialLinks = [
   {
     label: "GitHub",
-    href: "https://github.com/omprakashkadur",
+    href: "https://github.com/OmprakashKadur",
     icon: "⌨️",
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/in/omprakashkadur",
+    href: "https://linkedin.com/in/omprakashkm",
     icon: "💼",
   },
   {
