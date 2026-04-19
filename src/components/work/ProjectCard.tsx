@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { type Project } from "@/data/projects";
 
 interface ProjectCardProps {
@@ -41,9 +42,20 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             transition: "transform 0.3s ease",
           }}
         >
-          <span style={{ fontSize: "64px", lineHeight: 1 }}>
-            {project.emoji}
-          </span>
+          {project.thumbnail ? (
+            <Image
+              src={project.thumbnail}
+              alt={project.name}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              style={{ objectFit: "cover" }}
+              className="project-card-image"
+            />
+          ) : (
+            <span style={{ fontSize: "64px", lineHeight: 1 }}>
+              {project.emoji}
+            </span>
+          )}
           {project.featured && (
             <span
               style={{
@@ -58,6 +70,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 padding: "3px 10px",
                 borderRadius: "var(--radius-full)",
                 letterSpacing: "0.05em",
+                zIndex: 2,
               }}
             >
               Featured

@@ -152,7 +152,7 @@ export default function Hero() {
               }}
             >
               {[
-                { value: "12+", label: "Projects" },
+                { value: "20+", label: "Projects" },
                 { value: "5", label: "Stacks" },
                 { value: "₹0", label: "Hidden Fees" },
               ].map((stat) => (

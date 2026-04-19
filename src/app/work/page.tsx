@@ -50,8 +50,8 @@ export default function WorkPage() {
             }}
           >
             {[
-              "12+ Projects",
-              "12 Categories",
+              "8+ Projects",
+              "7 Categories",
               "All Live on Vercel",
             ].map((stat) => (
               <span
