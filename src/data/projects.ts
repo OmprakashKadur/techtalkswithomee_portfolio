@@ -14,19 +14,34 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "16",
-    slug: "interior-design",
-    name: "Maison & Co",
-    category: "Interior Design",
+    id: "15",
+    slug: "npp-exports",
+    name: "NPP Exports",
+    category: "Agriculture",
     description:
-      "Luxury interior design studio website showcasing portfolio, services, and design philosophy. Features elegant visuals and project galleries.",
-    demoUrl: "https://interior-design-omee.vercel.app/",
-    tags: ["Interior Design", "Portfolio", "Luxury"],
-    color: "#8B7355",
+      "A premium agricultural export company website showcasing products like coconut, onion, garlic, spices, and corn. Features global shipping info, quality certifications, and an enquiry form for international buyers.",
+    demoUrl: "https://www.nppexports.com",
+    tags: ["Agriculture", "Export", "Next.js", "International Trade"],
+    color: "#10B981",
     featured: true,
-    emoji: "🏠",
-    thumbnail: "/images/interior-design-01.png",
+    emoji: "🌾",
+    thumbnail: "/images/npp-exports.png",
   },
+  {
+    id: "8",
+    slug: "the-tution-hub",
+    name: "The Tution Hub",
+    category: "Education",
+    description:
+      "Best Tution institute for students from 1st to 10th with best results, faculty profiles, and online enquiry form.",
+    demoUrl: "https://the-tution-hub.vercel.app",
+    tags: ["Education", "Courses", "Lead Gen"],
+    color: "#8B5CF6",
+    featured: true,
+    emoji: "📚",
+    thumbnail: "/images/the-tution-hub.png",
+  },
+
   {
     id: "17",
     slug: "ayurwellness",
@@ -69,33 +84,7 @@ export const projects: Project[] = [
     emoji: "☕",
     thumbnail: "/images/cafe-restro.png",
   },
-  {
-    id: "15",
-    slug: "npp-exports",
-    name: "NPP Exports",
-    category: "Agriculture",
-    description:
-      "A premium agricultural export company website showcasing products like coconut, onion, garlic, spices, and corn. Features global shipping info, quality certifications, and an enquiry form for international buyers.",
-    demoUrl: "https://www.nppexports.com",
-    tags: ["Agriculture", "Export", "Next.js", "International Trade"],
-    color: "#10B981",
-    featured: true,
-    emoji: "🌾",
-  },
-  {
-    id: "8",
-    slug: "the-tution-hub",
-    name: "The Tution Hub",
-    category: "Education",
-    description:
-      "Best Tution institute for students from 1st to 10th with best results, faculty profiles, and online enquiry form.",
-    demoUrl: "https://the-tution-hub.vercel.app",
-    tags: ["Education", "Courses", "Lead Gen"],
-    color: "#8B5CF6",
-    featured: true,
-    emoji: "📚",
-    thumbnail: "/images/the-tution-hub.png",
-  },
+
   {
     id: "13",
     slug: "smilecare-dental",
@@ -123,6 +112,20 @@ export const projects: Project[] = [
     featured: true,
     emoji: "🦷",
     thumbnail: "/images/smile-dental-care-01.png",
+  },
+  {
+    id: "16",
+    slug: "interior-design",
+    name: "Maison & Co",
+    category: "Interior Design",
+    description:
+      "Luxury interior design studio website showcasing portfolio, services, and design philosophy. Features elegant visuals and project galleries.",
+    demoUrl: "https://interior-design-omee.vercel.app/",
+    tags: ["Interior Design", "Portfolio", "Luxury"],
+    color: "#8B7355",
+    featured: true,
+    emoji: "🏠",
+    thumbnail: "/images/interior-design-01.png",
   },
 ];
 
