@@ -202,7 +202,7 @@ export default function Footer() {
               color: "var(--text-muted)",
             }}
           >
-            © 2024 Omprakash Kadur. All rights reserved.
+            © {new Date().getFullYear()} Omprakash Kadur. All rights reserved.
           </span>
           <span
             style={{

@@ -15,6 +15,8 @@ export default function CustomCursor() {
   useEffect(() => {
     if (isTouchDevice) return;
 
+    document.body.classList.add("custom-cursor-active");
+
     const moveCursor = (e: MouseEvent) => {
       if (!visible) setVisible(true);
 
@@ -51,6 +53,7 @@ export default function CustomCursor() {
     return () => {
       window.removeEventListener("mousemove", moveCursor);
       observer.disconnect();
+      document.body.classList.remove("custom-cursor-active");
     };
   }, [visible]);
 

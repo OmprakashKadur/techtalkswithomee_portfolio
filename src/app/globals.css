@@ -170,7 +170,8 @@ body {
 /* ============================================================
    CUSTOM CURSOR
    ============================================================ */
-* { cursor: none !important; }
+/* Custom cursor only on non-touch devices — applied via JS in CustomCursor.tsx */
+body.custom-cursor-active * { cursor: none !important; }
 
 .cursor {
   position: fixed;

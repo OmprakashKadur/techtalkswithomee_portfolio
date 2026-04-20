@@ -45,7 +45,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {project.thumbnail ? (
             <Image
               src={project.thumbnail}
-              alt={project.name}
+              alt={`${project.name} — ${project.category} website built by Omprakash Kadur`}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               style={{ objectFit: "cover" }}
