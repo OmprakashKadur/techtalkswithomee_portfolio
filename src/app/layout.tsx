@@ -5,7 +5,7 @@ import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import CustomCursor from "@/components/shared/CustomCursor";
 import { Analytics } from "@vercel/analytics/next";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 const syne = Syne({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
@@ -171,6 +171,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <Analytics />
+        <SpeedInsights/>
       </body>
     </html>
   );
