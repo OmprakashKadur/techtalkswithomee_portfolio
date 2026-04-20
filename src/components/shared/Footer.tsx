@@ -5,6 +5,7 @@ import Link from "next/link";
 const footerLinks = [
   { label: "Home", href: "/" },
   { label: "Work", href: "/work" },
+  { label: "Blog", href: "/blog" },
   { label: "Services", href: "/#services" },
   { label: "Contact", href: "/#contact" },
 ];
@@ -32,14 +33,7 @@ export default function Footer() {
     <footer className="footer" style={{ background: "var(--black)" }}>
       <div className="container">
         {/* Main Footer Grid */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr",
-            gap: "var(--space-12)",
-          }}
-          className="footer-grid"
-        >
+        <div className="footer-grid">
           {/* Column 1 — Brand */}
           <div>
             <Link

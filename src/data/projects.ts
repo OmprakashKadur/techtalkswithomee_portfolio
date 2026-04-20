@@ -127,6 +127,20 @@ export const projects: Project[] = [
     emoji: "🏠",
     thumbnail: "/images/interior-design-01.png",
   },
+  {
+    id: "20",
+    slug: "interior-company",
+    name: "Atelier Luxe",
+    category: "Interior Design",
+    description:
+      "A luxury interior design studio website with elegant portfolio showcases, bespoke service listings, and immersive project galleries. Features a refined aesthetic with smooth animations and client inquiry flow.",
+    demoUrl: "https://interior-company-nu.vercel.app/",
+    tags: ["Interior Design", "Luxury", "Portfolio", "Lead Gen"],
+    color: "#C2410C",
+    featured: true,
+    emoji: "🏡",
+    thumbnail: "/images/interior-design-website.png",
+  },
 ];
 
 export const categories = [

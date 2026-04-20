@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { type Project } from "@/data/projects";
 
 interface ProjectCardProps {
@@ -9,10 +10,8 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <a
-      href={project.demoUrl}
-      target="_blank"
-      rel="noopener noreferrer"
+    <Link
+      href={`/work/${project.slug}`}
       className="project-card-link"
       style={{ textDecoration: "none", display: "block" }}
     >
@@ -161,7 +160,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               className="btn btn-primary btn-sm"
               style={{ fontSize: "11px", padding: "4px 12px" }}
             >
-              View Live Demo →
+              View Details →
             </span>
             <span
               style={{
@@ -177,11 +176,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 transition: "all 0.2s ease",
               }}
             >
-              ↗
+              →
             </span>
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
