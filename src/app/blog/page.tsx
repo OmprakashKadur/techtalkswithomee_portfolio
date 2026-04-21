@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { blogPosts } from "@/data/blog";
+import HireMeCTA from "@/components/shared/HireMeCTA";
 
 export const metadata: Metadata = {
   title: "Blog | Web Development Tips for Local Businesses — techtalkswithomee.com",
@@ -123,6 +124,7 @@ export default function BlogPage() {
           ))}
         </div>
       </div>
+      <HireMeCTA text="Need help with your website or SEO?" />
     </div>
   );
 }

@@ -6,6 +6,7 @@ import TechStack from "@/components/home/TechStack";
 import WorkPreview from "@/components/home/WorkPreview";
 import Pricing from "@/components/home/Pricing";
 import FinalCTA from "@/components/home/FinalCTA";
+import HireMeCTA from "@/components/shared/HireMeCTA";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -62,6 +63,49 @@ const faqSchema = {
   ],
 };
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "techtalkswithomee - Web Development Services",
+  image: "https://www.techtalkswithomee.com/og-image.jpg",
+  url: "https://www.techtalkswithomee.com",
+  telephone: "+91-9964185119",
+  email: "kaduromee@gmail.com",
+  priceRange: "₹₹",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Bangalore",
+    addressLocality: "Bangalore",
+    addressRegion: "Karnataka",
+    postalCode: "560001",
+    addressCountry: "IN",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "12.9716",
+    longitude: "77.5946",
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "18:00",
+    },
+  ],
+  serviceType: [
+    "Website Development",
+    "SEO Services",
+    "Google Business Profile Setup",
+    "WhatsApp Integration",
+    "Local SEO",
+  ],
+  areaServed: {
+    "@type": "City",
+    name: "Bangalore",
+  },
+};
+
 export default function Home() {
   return (
     <>
@@ -69,12 +113,17 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
       <Hero />
       <Marquee />
       <About />
       <Services />
       <TechStack />
       <WorkPreview />
+      <HireMeCTA />
       {/* <Pricing /> */}
       <FinalCTA />
     </>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { blogPosts, getPostBySlug } from "@/data/blog";
+import HireMeCTA from "@/components/shared/HireMeCTA";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -227,30 +228,7 @@ export default async function BlogPostPage({ params }: Props) {
           }}
         />
 
-        <div
-          style={{
-            background: "var(--black-1)",
-            border: "1px solid var(--border)",
-            borderRadius: "var(--radius-xl)",
-            padding: "var(--space-8)",
-            textAlign: "center",
-          }}
-        >
-          <h3 style={{ fontSize: "var(--text-xl)" }}>
-            Need a Website for Your Business?
-          </h3>
-          <p style={{ marginTop: "var(--space-3)" }}>
-            I build fast, SEO-optimized websites for local businesses in India.
-            Starting at ₹3,999.
-          </p>
-          <Link
-            href="/#contact"
-            className="btn btn-primary"
-            style={{ marginTop: "var(--space-6)" }}
-          >
-            Get a Free Quote →
-          </Link>
-        </div>
+        <HireMeCTA text="Need a Website for Your Business?" />
       </article>
     </div>
   );

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import WorkPageClient from "./WorkPageClient";
+import HireMeCTA from "@/components/shared/HireMeCTA";
 
 export const metadata: Metadata = {
   title: "Projects & Client Sites | Omprakash Kadur — techtalkswithomee.com",
@@ -33,5 +34,10 @@ export const metadata: Metadata = {
 };
 
 export default function WorkPage() {
-  return <WorkPageClient />;
+  return (
+    <>
+      <WorkPageClient />
+      <HireMeCTA text="Want a website like these?" />
+    </>
+  );
 }

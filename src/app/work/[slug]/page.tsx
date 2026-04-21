@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { projects } from "@/data/projects";
+import HireMeCTA from "@/components/shared/HireMeCTA";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -277,6 +278,7 @@ export default async function ProjectDetailPage({ params }: Props) {
           </div>
         )}
       </div>
+      <HireMeCTA text={`Want a ${project.category} website like this?`} />
     </div>
   );
 }
