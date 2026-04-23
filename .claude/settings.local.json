@@ -2,7 +2,15 @@
   "permissions": {
     "allow": [
       "Bash(npx next:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "WebFetch(domain:techtalkswithomee.com)",
+      "WebSearch",
+      "WebFetch(domain:trends.google.com)",
+      "WebFetch(domain:www.semrush.com)",
+      "WebFetch(domain:backlinko.com)",
+      "WebFetch(domain:neilpatel.com)",
+      "WebFetch(domain:blog.hubspot.com)",
+      "Bash(ls:*)"
     ]
   }
 }

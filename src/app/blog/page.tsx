@@ -82,7 +82,7 @@ export default function BlogPage() {
                   ))}
                 </div>
 
-                <h3
+                <h2
                   style={{
                     fontFamily: "var(--font-display)",
                     fontSize: "var(--text-xl)",
@@ -92,7 +92,7 @@ export default function BlogPage() {
                   }}
                 >
                   {post.title}
-                </h3>
+                </h2>
 
                 <p
                   style={{

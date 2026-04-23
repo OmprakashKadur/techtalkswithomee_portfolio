@@ -51,6 +51,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "Omprakash Kadur | Websites That Convert — techtalkswithomee.com",
     description:
